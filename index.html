@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
+      background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -21,7 +21,7 @@
       width: 240px;
       margin-top: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+      box-shadow: 0 0 30px rgba(255, 193, 7, 0.5);
     }
     h1 {
       font-size: 28px;
@@ -31,7 +31,7 @@
     h2 {
       font-size: 18px;
       color: #ccc;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
       text-align: center;
     }
     .buttons {
@@ -46,21 +46,21 @@
       align-items: center;
       justify-content: center;
       padding: 15px;
-      background: #222;
-      border: 1px solid #555;
       border-radius: 10px;
-      color: #fff;
-      text-decoration: none;
+      color: white;
       font-size: 16px;
-      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
     .button:hover {
-      background: #444;
-      transform: scale(1.02);
+      opacity: 0.9;
+      transform: scale(1.03);
     }
-    .button span {
-      margin-left: 10px;
-    }
+    .whatsapp { background-color: #25D366; }
+    .instagram { background-color: #E1306C; }
+    .email { background-color: #6C63FF; }
+    .location { background-color: #ff4444; }
   </style>
 </head>
 <body>
@@ -70,10 +70,10 @@
   <h2>Técnico em Iluminação - Caxias do Sul</h2>
 
   <div class="buttons">
-    <a class="button" href="https://wa.me/5554996924120" target="_blank">📱<span>WhatsApp</span></a>
-    <a class="button" href="https://www.instagram.com/fernandon.cx?igsh=MWFkNXJ6bWdqMXcwYQ==" target="_blank">📸<span>Instagram</span></a>
-    <a class="button" href="mailto:fernandonunes.cx@gmail.com">✉️<span>E-mail</span></a>
-    <a class="button" href="https://www.google.com/maps/place/Caxias+do+Sul" target="_blank">📍<span>Localização</span></a>
+    <a class="button whatsapp" href="https://wa.me/5554996924120" target="_blank">WhatsApp</a>
+    <a class="button instagram" href="https://www.instagram.com/fernandon.cx?igsh=MWFkNXJ6bWdqMXcwYQ==" target="_blank">Instagram</a>
+    <a class="button email" href="mailto:fernandonunes.cx@gmail.com">E-mail</a>
+    <a class="button location" href="https://www.google.com/maps/place/Caxias+do+Sul" target="_blank">Localização</a>
   </div>
 
 </body>
