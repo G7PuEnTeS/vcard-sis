@@ -1,80 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fernando Nunes | SIS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fernando Nunes - SIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
-      color: #fff;
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding: 30px 20px;
-      min-height: 100vh;
+      height: 100vh;
     }
-    .logo {
-      width: 240px;
-      margin-top: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(255, 193, 7, 0.5);
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 200, 0, 0.3);
+      width: 300px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
     }
     h1 {
-      font-size: 28px;
-      margin: 25px 0 5px;
-      text-align: center;
+      font-size: 22px;
+      margin: 10px 0 5px;
+      color: white;
+      text-shadow: 0 0 10px #ffcc00;
     }
     h2 {
-      font-size: 18px;
+      font-size: 14px;
+      margin: 0 0 20px;
       color: #ccc;
-      margin-bottom: 30px;
-      text-align: center;
+      text-shadow: 0 0 5px #ffaa00;
     }
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
-      max-width: 320px;
+    .icons a {
+      margin: 10px;
+      font-size: 26px;
+      color: #00ffff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .icons a:hover {
+      color: #ffaa00;
     }
     .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px;
-      border-radius: 10px;
-      color: white;
-      font-size: 16px;
+      display: inline-block;
+      margin-top: 20px;
+      background: #00ffff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
-    .button:hover {
-      opacity: 0.9;
-      transform: scale(1.03);
-    }
-    .whatsapp { background-color: #25D366; }
-    .instagram { background-color: #E1306C; }
-    .email { background-color: #6C63FF; }
-    .location { background-color: #ff4444; }
   </style>
 </head>
 <body>
-
-  <img src="logo-sis.jpg" alt="Logo SIS" class="logo">
-  <h1>Fernando Nunes</h1>
-  <h2>Técnico em Iluminação - Caxias do Sul</h2>
-
-  <div class="buttons">
-    <a class="button whatsapp" href="https://wa.me/5554996924120" target="_blank">WhatsApp</a>
-    <a class="button instagram" href="https://www.instagram.com/fernandon.cx?igsh=MWFkNXJ6bWdqMXcwYQ==" target="_blank">Instagram</a>
-    <a class="button email" href="mailto:fernandonunes.cx@gmail.com">E-mail</a>
-    <a class="button location" href="https://www.google.com/maps/place/Caxias+do+Sul" target="_blank">Localização</a>
+  <div class="card">
+    <img src="logo-sis.jpg" alt="Logo SIS"/>
+    <h1>Fernando Nunes</h1>
+    <h2>Técnico em Iluminação - Caxias do Sul</h2>
+    <div class="icons">
+      <a href="tel:+5554996924120" target="_blank"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/5554996924120" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/fernandon.cx?igsh=MWFkNXJ6bWdqMXcwYQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.google.com/maps/place/Caxias+do+Sul" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+    <a class="button" href="fernando.vcf" download>Salvar Contato</a>
   </div>
-
 </body>
 </html>
